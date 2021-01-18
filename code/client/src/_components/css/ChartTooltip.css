@@ -1,0 +1,16 @@
+
+.chart-tooltip > .student-card{
+  transform: scale(0.6) translateY(-60%);
+}
+
+@media(min-height: 800px){
+  .chart-tooltip > .student-card{
+    transform: scale(0.8) translateY(-40%);
+  }
+}
+
+@media(min-height: 1300px){
+  .chart-tooltip > .student-card{
+    transform: scale(1.2) translateY(-19%);
+  }
+}

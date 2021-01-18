@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+## Client
+# dependencies
+/code/client/node_modules
+/code/client/.pnp
+/code/client.pnp.js
+
+# testing
+/code/client/coverage
+
+# production
+/code/client/build
+
+# misc
+/code/client.DS_Store
+/code/client/.env.local
+/code/client/.env.development.local
+/code/client/.env.test.local
+/code/client/.env.production.local
+
+/code/client/npm-debug.log*
+/code/client/yarn-debug.log*
+/code/client/yarn-error.log*
+
+##Server
+/code/server/node_modules
+
+##Env
+/code/.env

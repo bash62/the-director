@@ -1,0 +1,83 @@
+.groups-menu{
+  position: absolute;
+  height: 77vh;
+  background-color: var(--dark-color);
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  align-items: stretch;
+  transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  padding-top: 1vw;
+}
+
+.groups-menu--left .group__card-wrapper{
+  transform: translateX(-40rem);
+  transition: transform 0.7s;
+}
+
+.groups-menu--left:hover .group__card-wrapper{
+  transform: translateX(0rem);
+}
+
+.groups-menu--right .group__card-wrapper{
+  transform: translateX(40rem);
+  transition: transform 0.7s;
+}
+
+.groups-menu--right:hover .group__card-wrapper{
+  transform: translateX(0rem);
+}
+
+.groups-menu--left{
+  left: 0%;
+  border-radius: 0 2vw 2vw 0;
+  min-width: calc(6rem + 18vw);
+  flex-flow: row-reverse nowrap;
+}
+
+.groups-menu--right{
+  right: 0%;
+  flex-flow: row nowrap;
+  border-radius: 2vw 0 0 2vw;
+  min-width: calc(6rem + 18vw);
+}
+
+.groups-menu--left>.groups-menu__toggler{
+  transform: rotate(90deg);
+}
+
+.groups-menu--right>.groups-menu__toggler{
+  transform: rotate(-90deg);
+}
+
+.groups-menu__title{
+  margin-bottom: 10px;
+}
+
+.groups-menu:hover{
+  min-width: 40rem;
+}
+
+.groups-menu:hover .group__students-counter{
+  width: 90%;
+}
+
+.groups-menu:hover~.student-card, .groups-menu:hover~.student__choice{
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+.groups-menu .group{
+  flex-grow: 1;
+}
+
+
+
+.groups-menu__toggler{
+  position: absolute;
+  top: calc(50% - 1.25em)
+}
+
+
+
+

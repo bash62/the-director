@@ -1,0 +1,61 @@
+.student-card{
+  min-width: 280px;
+  color: #000;
+  background: #fff;
+  margin: 0 11% 0 11%;
+  font-family: var(--font-main);
+  padding: 1rem;
+  border-radius: 20px;
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+}
+
+.student-card__icon{
+  width: 132px;
+  height: 140px;
+}
+
+.student-card__presentation{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  padding: 0 1rem 0 1rem;
+}
+
+.student-card__name{
+  font-size: 25px;
+}
+
+.student-card__sex{
+  width: 30px;
+}
+
+
+.student-card__props{
+  font-size: 15px;
+}
+
+.student-card__prop{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+.student-card__cat{
+  border: 2px dotted #BBB;
+  padding: 0 1rem 0.5rem 1rem;
+  border-radius: 10px;
+  margin-top: 0.1rem;
+}
+
+.student-card__cat-title{
+  margin-top: 0.5rem;
+  color: #BBB;
+  font-size: 14px;
+}

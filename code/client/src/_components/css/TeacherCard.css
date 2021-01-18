@@ -1,0 +1,40 @@
+.teacher-card{
+  background: #fff;
+  color: var(--dark-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  max-width: 15rem;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  align-items: center;
+}
+
+.teacher-card__presentation{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  padding: 1rem;
+  font-family: var(--font-main);
+}
+
+.teacher-card__sex{
+  min-width: 30px;
+  width: 30px;
+}
+
+.teacher-card__name{
+  font-size: 25px;
+}
+
+.teacher-card__image{
+  height: 10rem;
+}
+
+.teacher-card__desc{
+  width: 80%;
+  padding: 1rem 0;
+  font-size: 17px;
+  font-family: var(--font-second);
+}

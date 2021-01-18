@@ -1,0 +1,26 @@
+:root{
+  --bg: #C8F5BC;
+  --font-main: 'Trispace', sans-serif;
+  --font-second: 'Roboto', sans-serif;
+  --nav-height: 60px;
+  --dark-color: #1F232A;
+  --light-blue-color: #60DAFB;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a{
+  text-decoration: none;
+}

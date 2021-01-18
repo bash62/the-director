@@ -1,0 +1,171 @@
+.ranking
+{
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background: rgb(214, 214, 214);
+    overflow: hidden;
+}
+
+.head-page
+{
+    font-family: var(--font-main);
+}
+
+.ranking.loading
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-button{
+    position: absolute;
+    top: 4.5vw;
+    left: 4vw;
+    background-color: #ffa751;
+    color: #fff;
+    font-size: 1.5vw;
+    transition: .3s;
+    border-radius: .5vw;
+    padding: .6vw 2vw;
+    font-family: var(--font-second);
+}
+
+.home-button:hover
+{
+    filter: brightness(1.1);
+}
+
+.title-page
+{
+    font-size: 5vw;
+    margin: 3vw 0;
+    width: 100vw;
+    text-align: center;
+}
+
+.leaderboard
+{
+    border-radius: 1vw 1vw 0 0;
+    margin: 1vw 5vw;
+    background-color: rgb(36, 36, 36);
+}
+
+.general-bar{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1vw;
+    font-weight: bold;
+    font-size: 1.4vw;
+    color: white;
+    width: 98%;
+}
+
+.general-bar>*{
+    width: 40%;
+    text-align: center;
+}
+
+.leaderboard .ranking-recap-bar
+{
+    padding-top:2vw;
+    padding-bottom: 2vw;
+    font-family: var(--font-main);
+    font-size: 1.2vw;
+    position: relative;
+}
+
+.ranking-recap-bar>*{
+    width: 40%;
+    text-align: center;
+}
+
+.ranking-recap-bar>.position{
+    position: relative;
+}
+
+.leaderboard .ranking-recap-bar>.position::after{
+    position: absolute;
+    left: 5vw;
+}
+
+.ranking-recap-bar:nth-child(1)>.position::after
+{
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    content: "";
+    background: url(../../img/gold_medal.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.ranking-recap-bar:nth-child(2)>.position::after
+{
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    content: "";
+    background: url(../../img/silver_medal.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.ranking-recap-bar:nth-child(3)>.position::after
+{
+    display: inline-block;
+    width: 2vw;
+    height: 2vw;
+    content: "";
+    background: url(../../img/bronze_medal.png) no-repeat 0 0;
+    background-size: 100%;
+    text-align: left;
+}
+
+.ranking-recap-bar:hover
+{
+    animation-name: animBorder;
+    animation-duration: 0.10s;
+    border-left: 8px solid #ffa751;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+@keyframes animBorder {
+    0%   {border-left: 1px solid #fdd8b2;}
+    25%  {border-left: 2x solid #ffcf9f;}
+    50%  {border-left: 3px solid #ffb974;}
+    75%  {border-left: 4px solid #ffb66e;}
+    100% {border-left: 5px solid #ffa751;}
+}
+
+.all-game>.spinner-wrapper
+{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    background: rgb(214, 214, 214);
+    padding:1vw 0;
+}
+
+.ranking__more-button{
+    color: #fff;
+    background: #ffa751;
+    max-width: 12vw;
+    padding: .6vw 1vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    font-family: var(--font-main);
+    transition: .3s;
+}
+
+.ranking__more-button:hover{
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+.more-button-wrapper{
+    padding-top: 3vw;
+    background: rgb(214, 214, 214);
+    display: flex;
+    justify-content: center;
+}

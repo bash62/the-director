@@ -1,0 +1,166 @@
+.group{
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.group__title{
+  font-family: var(--font-main);
+  font-size: 3vh;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.group__content-wrapper{
+  display: inline-flex;
+  justify-content: space-around;
+  width: 90%;
+  flex-grow: 1;
+  position: relative;
+}
+
+.group__students-counter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  flex-flow: column;
+  top: 10vh;
+  height: 40%;
+  font-family: var(--font-main);
+  font-size: 150%;
+  border: 3px dashed white;
+  border-radius: 2rem;
+  padding: 2rem 1rem;
+  width: 30%;
+  transition: .4s;
+}
+
+.group__students-number{
+  font-size: 8vh;
+}
+
+.group__card-wrapper{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group__card{
+  background: #FFF;
+  border-radius: .6vw;
+  width: 8vw;
+  height: 13vw;
+  box-shadow: -20px 0 3rem #000;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.group .student-card{
+  top: -400px;
+  transform: scale(0.001);
+}
+
+.group__card:hover+.student-card{
+  transform: scale(0.65);
+}
+
+@media(min-height: 700px){
+  .group__card:hover+.student-card{
+    transform: scale(0.7);
+  }
+}
+
+@media(min-height: 800px){
+  .group__card:hover+.student-card{
+    transform: scale(0.85) translateY(-3vh);
+  }
+}
+
+@media(min-height: 1000px){
+  .group__card:hover+.student-card{
+    transform: scale(1) translateY(-3vh);
+  }
+}
+
+@media(min-height: 1300px){
+  .group__card:hover+.student-card{
+    transform: scale(1.4) translateY(-5vh);
+  }
+}
+
+.group__teacher-card .group__card-pic{
+  height: 25vh;
+}
+
+.group__card:hover{
+  transform: translateY(-15px);
+}
+
+.group__card:hover~.group__card{
+  transform: translateX(100px);
+}
+
+.group__card-name{
+  color: #000;
+  font-family: var(--font-main);
+  text-align: center;
+  font-size: 1vw;
+}
+
+.group__card-pic{
+  width: 100%;
+}
+
+.group__card:not(:first-child){
+  margin-left: -7.1vw;
+}
+
+.group__teacher-card+.teacher-card{
+  position: absolute;
+  transform: scale(0.001) translateX(-100vw);
+  transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+  z-index: 4;
+}
+
+.groups-menu--left .group__teacher-card+.teacher-card{
+  transform: scale(0.001) translateX(100vw);
+  opacity: 0;
+}
+
+.groups-menu--left .group__teacher-card:hover+.teacher-card{
+  transform: scale(1) translateX(40vh);
+  opacity: 1;
+}
+
+.groups-menu--right .group__teacher-card:hover+.teacher-card{
+  transform: scale(1) translateX(-40vh);
+  opacity: 1;
+}
+
+
+@media(min-height: 800px){
+  .groups-menu--left .group__teacher-card:hover+.teacher-card{
+    transform: scale(1.2) translateX(30vh);
+  }
+  .groups-menu--right .group__teacher-card:hover+.teacher-card{
+    transform: scale(1.2) translateX(-30vh);
+  }  
+}
+
+@media(min-height: 1300px){
+  .groups-menu--left .group__teacher-card:hover+.teacher-card{
+    transform: scale(1.8) translateX(20vh);
+  }
+  .groups-menu--right .group__teacher-card:hover+.teacher-card{
+    transform: scale(1.8) translateX(-20vh);
+  }  
+}
